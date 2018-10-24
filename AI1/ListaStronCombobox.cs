@@ -16,6 +16,7 @@ namespace AI1
             for (int i = 0; i < listaStron.Count; i++)
             {
                 nazwaCombobox.Items.Add(listaStron[i]);
+                
             }
         }
         public void ZmianaStrony(int nrIndexu, Page zStrony)
