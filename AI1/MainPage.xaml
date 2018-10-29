@@ -8,8 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ComboBox x:Name="listaStronCombo" HorizontalAlignment="Left" Margin="656,504,0,0" VerticalAlignment="Top" Width="560" Height="148" SelectionChanged="listaStronCombo_SelectionChanged"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="704,368,0,0" TextWrapping="Wrap" Text="Wybierz Algorytm" Height="92" Width="468" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black" TextAlignment="Center"/>
+        <ComboBox x:Name="listaStronCombo" HorizontalAlignment="Left" Margin="466,500,0,0" VerticalAlignment="Top" Width="560" Height="148" SelectionChanged="listaStronCombo_SelectionChanged"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="555,374,0,0" TextWrapping="Wrap" Text="Wybierz Algorytm" Height="92" Width="468" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black" TextAlignment="Center"/>
 
     </Grid>
 </Page>

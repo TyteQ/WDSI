@@ -98,10 +98,12 @@
     <Compile Include="AlgorytmGenetycznyy.xaml.cs">
       <DependentUpon>AlgorytmGenetycznyy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Genotype.cs" />
     <Compile Include="ListaStronCombobox.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Population.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
