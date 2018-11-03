@@ -13,28 +13,35 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+using System.Collections.ObjectModel;
+
+
+//Szablon elementu Pusta strona jest udokumentowany na stronie https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x415
 
 namespace AI1
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Pusta strona, która może być używana samodzielnie lub do której można nawigować wewnątrz ramki.
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        ObservableCollection<string> fonts = new ObservableCollection<string>();
+
         ListaStronCombobox ObslugaCombo;
         public MainPage()
         {
-            ObslugaCombo = new ListaStronCombobox(listaStronCombo);
-            listaStronCombo.SelectedIndex = 0;
+            ObslugaCombo = new ListaStronCombobox();
+            fonts = ObslugaCombo.fonts;
+  
+           // ObslugaCombo = new ListaStronCombobox(listaStronCombo);
+           // listaStronCombo.SelectedIndex = 0;
             this.InitializeComponent();
         }
 
         private void listaStronCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (listaStronCombo.SelectedIndex == 0)
-                return;
-            ObslugaCombo.ZmianaStrony(listaStronCombo.SelectedIndex, this);
+           
+           ObslugaCombo.ZmianaStrony(listaStronCombo.SelectedIndex, this);
         }
     }
 }

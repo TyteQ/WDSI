@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+using System.Collections.ObjectModel;
 
 namespace AI1
 {
     class ListaStronCombobox
     {
-        public ListaStronCombobox(ComboBox nazwaCombobox)
+        public ObservableCollection<string> fonts;
+        public ListaStronCombobox()
         {
             //nazwaCombobox.Items.Clear();
-            List<string> listaStron = new List<string>(new string[] { "Algorytm Genetyczny" }); //, "Czas na świecie", "Alarmy" });
-            for (int i = 0; i < listaStron.Count; i++)
-            {
-                nazwaCombobox.Items.Add(listaStron[i]);
-                
-            }
+            fonts = new ObservableCollection<string>(new string[] { "Algorytm Genetyczny" });//new ObservableCollection<string>(new string[] { "Algorytm Genetyczny" }); //, "Czas na świecie", "Alarmy" });
+
+
         }
         public void ZmianaStrony(int nrIndexu, Page zStrony)
         {
@@ -30,4 +25,3 @@ namespace AI1
         }
     }
 }
-
